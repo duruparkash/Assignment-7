@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+
+  box-sizing: border-box;
+}
+
+/* HEADER STYLING */
+header {
+  background-color: black;
+  color: white;
+
+  padding: 15px 40px;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #151515;
+}
+
+#logo:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+#navigation {
+  display: flex;
+  gap: 30px;
+}
+
+#navigation a {
+  text-decoration: none;
+  color: #fff;
+
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+
+  padding: 5px 0;
+}
+
+#navigation a:hover {
+  text-decoration: none;
+  color: #bdbdbd;
+  border-bottom: 2px solid white;
+  transition: 0.2s;
+}
+
+#head-bu {
+  padding: 10px 25px;
+  background-color: #0d0d0d;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #444;
+  border-radius: 8px;
+}
+
+#head-bu:hover {
+  transform: scale(1.05);
+  background-color: #151515;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.seperate {
+  margin: 60px 0px 50px 0px;
+
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-collapse: collapse;
+}
+
+main {
+  color: #fff;
+}
+
+.label {
+  padding: 40px 150px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.label h5 {
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #aaa;
+}
+.label h3 {
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.label p {
+  line-height: 1.6;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.label button {
+  padding: 14px 30px;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #333;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+.label button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.services-section {
+  display: block;
+  padding: 80px 0;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.service-card {
+  background-color: #0a0a0a;
+  border: 1px solid #222;
+  border-radius: 16px;
+  padding: 30px;
+  width: 350px;
+  height: auto;
+  min-height: 250px;
+  text-align: left;
+}
+
+.service-card:hover {
+  background-color: #121212;
+  border: 1px solid #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+  transition: 0.4s ease-out;
+}
+
+/* ICON */
+.icon {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.service-card p {
+  color: #b0b0b0;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.btn div:hover {
+  transform: translateX(5px);
+  transition: 0.3s;
+}
+
+#conts {
+  max-width: 1200px;
+  min-height: 700px;
+  background-color: black;
+  margin: 0 auto;
+  padding: 50px 0;
+  position: relative;
+}
+
+.labcont {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: static;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+.labcont h5 {
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+.labcont h3 {
+  font-size: 55px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+.labcont p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#form {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+}
+#form label {
+  font-size: 18px;
+  line-height: 1.5rem;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  display: block;
+}
+#form input,
+#form textarea {
+  background-color: #121212;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #333;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+#form textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+/* SUBMIT BUTTON */
+#form input[type="submit"] {
+  background-color: #222;
+  font-weight: 600;
+  padding: 15px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#form input[type="submit"]:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+img {
+  position: absolute;
+
+  right: 50px;
+  top: 150px;
+  max-width: 450px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.class-6 {
+  color: #fff;
+}
